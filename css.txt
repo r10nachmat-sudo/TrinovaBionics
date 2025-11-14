@@ -1,0 +1,250 @@
+/* Configuración Global y Tipografía */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Fondo oscuro, casi negro */
+    color: #f0f0f0; /* Texto claro */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #00ffff; /* Color neón cian para títulos principales */
+    border-bottom: 2px solid #ff1493; /* Línea de color neón magenta */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #ff1493; /* Neón magenta para subtítulos */
+    margin-top: 40px;
+}
+
+a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff1493;
+}
+
+/* Contenedores de Secciones */
+.section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dark-section {
+    background-color: #1a1a1a;
+}
+
+.light-section {
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+}
+
+/* Separador */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #3a3a3a;
+    margin: 0;
+}
+
+/* Hero / Encabezado */
+.hero {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 100px 5% 80px;
+    /* Fondo que sugiere tecnología/futurista */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('fondo_bionico.jpg'); /* Agregar una imagen futurista si es posible */
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid #00ffff;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    text-shadow: 0 0 10px #00ffff; /* Efecto neón suave */
+}
+
+.hero .tagline {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.logo-img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff1493; /* Botón neón magenta */
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    border: 2px solid #ff1493;
+}
+
+.btn:hover {
+    background-color: #00ffff; /* Hover neón cian */
+    color: #0d0d0d;
+    transform: translateY(-2px);
+    border: 2px solid #00ffff;
+}
+
+/* Sección de Principios */
+.principles {
+    text-align: center;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #00ffff;
+    border-left: 5px solid #ff1493;
+    padding-left: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Sección de Objetivos */
+.goal-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.goal-list li {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-left: 4px solid #00ffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.goal-list li:hover {
+    transform: translateY(-5px);
+}
+
+.integral-focus {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: rgba(0, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Perfil de Usuario y Tecnología */
+.two-columns {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.two-columns .column {
+    flex: 1;
+}
+
+.tech-list {
+    list-style-type: '⚡ ';
+    padding-left: 20px;
+}
+
+/* Galería de Imágenes (Modelado 3D) */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.4); /* Sombra neón */
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+.arduino-img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto;
+    border: 3px solid #00ffff;
+    border-radius: 5px;
+}
+
+/* Análisis de Mercado y Metas */
+.challenge-list, .future-goals {
+    list-style: none;
+    padding: 0;
+}
+
+.challenge-list li, .future-goals li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #444;
+}
+
+.challenge-list li::before {
+    content: '❌ ';
+    color: #ff1493;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.future-goals li::before {
+    content: '✅ ';
+    color: #00ffff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #666;
+    font-size: 0.9em;
+    border-top: 2px solid #ff1493;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    
+    .two-columns {
+        flex-direction: column;
+    }
+}
